@@ -1,10 +1,12 @@
 * {
   margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
+  width: 100%;
   color: #fff;
-  background-color: #1e1e1e;
+  background-color: #000;
 }
 
 button {
@@ -15,6 +17,7 @@ button {
 
 h1 {
   font-size: 72px;
+  text-align: center;
 }
 
 h2 {
