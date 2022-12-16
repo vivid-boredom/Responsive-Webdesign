@@ -1,0 +1,37 @@
+<section class="section-container">
+  <div class="info-container">
+    <h3>DISH</h3>
+    <h2>SUSHI</h2>
+
+    <div class="button-container">
+      <button
+        (click)="setSushi(0)"
+        class="{{ activeSushi === sushiArr[0] ? 'active' : '' }}"
+      >
+        {{ sushiArr[0].type }}
+      </button>
+      <span>|</span>
+      <button
+        (click)="setSushi(1)"
+        class="{{ activeSushi === sushiArr[1] ? 'active' : '' }}"
+      >
+        {{ sushiArr[1].type }}
+      </button>
+    </div>
+
+    <p>{{ activeSushi.paragraph }}</p>
+
+    <table>
+      <tbody>
+        <tr>
+          <td>WEIGHT</td>
+          <td>{{ activeSushi.weight }} g</td>
+        </tr>
+        <tr>
+          <td>CALORIES</td>
+          <td>{{ activeSushi.calories }} kcal</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>

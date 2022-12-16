@@ -1,0 +1,58 @@
+section {
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+
+  td {
+    text-align: right;
+    color: #fff;
+    padding: 20px 0;
+    border-bottom: 1pt solid rgba(255, 255, 255, 0.3);
+  }
+
+  td:first-child {
+    text-align: left;
+  }
+}
+
+.info-container {
+  width: 50%;
+  max-width: 520px;
+  margin-left: 50px;
+}
+
+.button-container {
+  padding-top: 50px;
+  padding-bottom: 30px;
+  display: flex;
+  column-gap: 10px;
+
+  button {
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    border-bottom: 1px solid transparent;
+
+    transition: opacity 0.3s;
+    opacity: 0.5;
+
+    &.active {
+      opacity: 1;
+    }
+  }
+
+  button:focus {
+    border-bottom: 1px solid #fff;
+  }
+
+  span {
+    font-size: 14px;
+    color: #ffffff80;
+  }
+}

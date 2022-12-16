@@ -1,0 +1,37 @@
+section {
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+  position: relative;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+article {
+  width: 33%;
+  max-width: 520px;
+  right: 50px;
+
+  text-align: left;
+
+  h2 {
+    max-width: 420px;
+  }
+
+  p {
+    margin-top: 20px;
+  }
+}
+
+.img-container {
+  width: 54%;
+  height: auto;
+  left: 50px;
+}
+
+article,
+.img-container {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}

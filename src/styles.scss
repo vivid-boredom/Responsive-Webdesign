@@ -21,6 +21,10 @@ h1 {
 }
 
 h2 {
+  font-size: 60px;
+}
+
+h3 {
   font-size: 28px;
 }
 
@@ -50,4 +54,8 @@ h2 {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.section-container {
+  height: 100vh;
 }

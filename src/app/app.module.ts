@@ -10,6 +10,9 @@ import { ScrollViewComponent } from './scroll-view/scroll-view.component';
 import { LanguageSelectComponent } from './header/language-select/language-select.component';
 import { SearchComponent } from './landing-page/search/search.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { VideoMediaComponent } from './video-media/video-media.component';
+import { ImageTextComponent } from './image-text/image-text.component';
+import { ProductPresentationComponent } from './product-presentation/product-presentation.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +24,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     ScrollViewComponent,
     LanguageSelectComponent,
     SearchComponent,
+    VideoMediaComponent,
+    ImageTextComponent,
+    ProductPresentationComponent,
   ],
   imports: [BrowserModule, ReactiveFormsModule],
   providers: [],
