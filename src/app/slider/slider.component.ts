@@ -46,6 +46,7 @@ export class SliderComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit(): void {
     this.mediaArr.push(this.mediaArr[0]);
+    this.mediaArr.push(this.mediaArr[1]);
 
     this.setTranslate();
     this.cd.detectChanges();
@@ -68,7 +69,6 @@ export class SliderComponent implements OnInit, AfterViewInit {
         if (this.index === this.length && !next) {
           this.index = 0;
         } else if (this.index === 0) {
-          this.mediaArr.push(this.mediaArr[1]);
           this.index = this.length;
         } else if (
           this.mediaArr.length > this.length + 1 &&

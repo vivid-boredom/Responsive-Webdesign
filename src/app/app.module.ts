@@ -13,6 +13,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { VideoMediaComponent } from './video-media/video-media.component';
 import { ImageTextComponent } from './image-text/image-text.component';
 import { ProductPresentationComponent } from './product-presentation/product-presentation.component';
+import { CounterComponent } from './scroll-view/counter/counter.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { ProductPresentationComponent } from './product-presentation/product-pre
     VideoMediaComponent,
     ImageTextComponent,
     ProductPresentationComponent,
+    CounterComponent,
   ],
   imports: [BrowserModule, ReactiveFormsModule],
   providers: [],
