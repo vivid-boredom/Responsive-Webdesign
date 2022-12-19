@@ -6,7 +6,7 @@ import {
   ViewChild,
 } from '@angular/core';
 import { FormControl } from '@angular/forms';
-import { Subject, takeUntil } from 'rxjs';
+import { Subject, takeUntil, timer } from 'rxjs';
 
 @Component({
   selector: 'app-search',
@@ -32,6 +32,8 @@ export class SearchComponent implements OnInit, OnDestroy {
 
       if (!v) {
         this.isTyping = false;
+      } else {
+        this.isSearching = true;
       }
     });
   }
@@ -46,7 +48,9 @@ export class SearchComponent implements OnInit, OnDestroy {
   }
 
   public onBlur(): void {
-    this.isSearching = false;
+    timer(100).subscribe(() => {
+      this.isSearching = false;
+    });
   }
 
   public clear(): void {
