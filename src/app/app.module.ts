@@ -10,10 +10,9 @@ import { ScrollViewComponent } from './scroll-view/scroll-view.component';
 import { LanguageSelectComponent } from './header/language-select/language-select.component';
 import { SearchComponent } from './landing-page/search/search.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { VideoMediaComponent } from './video-media/video-media.component';
 import { ImageTextComponent } from './image-text/image-text.component';
 import { ProductPresentationComponent } from './product-presentation/product-presentation.component';
-import { CounterComponent } from './scroll-view/counter/counter.component';
+import { CounterComponent } from './counter/counter.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +24,6 @@ import { CounterComponent } from './scroll-view/counter/counter.component';
     ScrollViewComponent,
     LanguageSelectComponent,
     SearchComponent,
-    VideoMediaComponent,
     ImageTextComponent,
     ProductPresentationComponent,
     CounterComponent,

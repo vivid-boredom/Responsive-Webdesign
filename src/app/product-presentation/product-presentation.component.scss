@@ -24,7 +24,9 @@ table {
 .info-container {
   width: 50%;
   max-width: 520px;
-  margin-left: 50px;
+  position: absolute;
+  top: 13%;
+  left: 50px;
 }
 
 .button-container {
