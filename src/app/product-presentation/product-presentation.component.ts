@@ -20,7 +20,7 @@ export class ProductPresentationComponent implements OnInit {
       paragraph: 'TODO',
       weight: 1344,
       calories: 5432,
-      imageSrc: './assets/media/product/sushi-plate.jpg',
+      imageSrc: './assets/media/product/sushi-plate.png',
     },
     {
       type: 'SINGLE',

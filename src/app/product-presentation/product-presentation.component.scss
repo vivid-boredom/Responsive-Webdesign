@@ -21,6 +21,17 @@ table {
   }
 }
 
+img {
+  width: 50%;
+  height: auto;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-position: center center;
+  background-size: cover;
+}
+
 .info-container {
   width: 50%;
   max-width: 520px;

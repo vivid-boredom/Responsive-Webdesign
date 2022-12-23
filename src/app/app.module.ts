@@ -6,13 +6,14 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { SliderComponent } from './slider/slider.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
-import { ScrollViewComponent } from './scroll-view/scroll-view.component';
 import { LanguageSelectComponent } from './header/language-select/language-select.component';
 import { SearchComponent } from './landing-page/search/search.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ImageTextComponent } from './image-text/image-text.component';
 import { ProductPresentationComponent } from './product-presentation/product-presentation.component';
 import { CounterComponent } from './counter/counter.component';
+import { ProgressComponent } from './progress/progress.component';
+import { StatsComponent } from './stats/stats.component';
 
 @NgModule({
   declarations: [
@@ -21,12 +22,13 @@ import { CounterComponent } from './counter/counter.component';
     FooterComponent,
     SliderComponent,
     LandingPageComponent,
-    ScrollViewComponent,
     LanguageSelectComponent,
     SearchComponent,
     ImageTextComponent,
     ProductPresentationComponent,
     CounterComponent,
+    ProgressComponent,
+    StatsComponent,
   ],
   imports: [BrowserModule, ReactiveFormsModule],
   providers: [],
