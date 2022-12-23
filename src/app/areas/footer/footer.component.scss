@@ -24,6 +24,8 @@ p {
 a {
   transition: color 1s cubic-bezier(0.25, 1, 0.25, 1),
     background-color 1s cubic-bezier(0.25, 1, 0.25, 1);
+
+  cursor: pointer;
 }
 
 a,

@@ -9,6 +9,16 @@ header {
 section {
   display: flex;
   align-items: center;
+  column-gap: 8px;
+
+  b {
+    margin-top: 8px;
+  }
+}
+
+img {
+  width: 24px;
+  height: auto;
 }
 
 .header-right {

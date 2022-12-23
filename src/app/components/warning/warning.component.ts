@@ -1,15 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-warning',
   templateUrl: './warning.component.html',
-  styleUrls: ['./warning.component.scss']
+  styleUrls: ['./warning.component.scss'],
 })
 export class WarningComponent implements OnInit {
+  @Input() warning = false;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

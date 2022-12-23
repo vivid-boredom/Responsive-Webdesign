@@ -1,0 +1,26 @@
+* {
+  color: #000;
+}
+
+section {
+  box-sizing: border-box;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: #00000080;
+}
+
+.container {
+  width: 75%;
+  max-width: 34.5rem;
+  padding: 24px;
+  background-color: #fff;
+  border-radius: 16px;
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+}

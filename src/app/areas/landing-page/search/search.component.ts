@@ -1,8 +1,10 @@
 import {
   Component,
   ElementRef,
+  EventEmitter,
   OnDestroy,
   OnInit,
+  Output,
   ViewChild,
 } from '@angular/core';
 import { FormControl } from '@angular/forms';
@@ -14,6 +16,8 @@ import { Subject, takeUntil, timer } from 'rxjs';
   styleUrls: ['./search.component.scss'],
 })
 export class SearchComponent implements OnInit, OnDestroy {
+  @Output() showWarning = new EventEmitter<void>();
+
   @ViewChild('input') input?: ElementRef;
 
   public control: FormControl = new FormControl<string>('');
@@ -62,5 +66,9 @@ export class SearchComponent implements OnInit, OnDestroy {
 
     this.isSearching = true;
     this.isTyping = false;
+  }
+
+  public warning(): void {
+    this.showWarning.emit();
   }
 }

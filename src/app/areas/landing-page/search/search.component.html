@@ -39,5 +39,7 @@
       />
     </svg>
   </button>
-  <button *ngIf="!isSearching" class="search-btn">Suchen</button>
+  <button *ngIf="!isSearching" class="search-btn" (click)="warning()">
+    Suchen
+  </button>
 </div>

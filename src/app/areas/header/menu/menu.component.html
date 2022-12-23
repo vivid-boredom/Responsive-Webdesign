@@ -1,0 +1,17 @@
+<section (click)="close.emit()">
+  <div class="container" (click)="stopPropagation($event)">
+    <app-list
+      (close)="close.emit()"
+      (changeComponent)="activeComponent = $event"
+      (showWarning)="showWarning.emit()"
+      *ngIf="activeComponent === 'list'"
+    ></app-list>
+
+    <app-orders-favourites
+      *ngIf="activeComponent === 'orders' || activeComponent === 'favourites'"
+      [activeComponent]="activeComponent"
+      (changeComponent)="activeComponent = 'list'"
+      (showWarning)="showWarning.emit()"
+    ></app-orders-favourites>
+  </div>
+</section>
