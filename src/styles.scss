@@ -35,6 +35,19 @@ h4 {
   line-height: 38px;
 }
 
+.background {
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .icon-button {
   min-width: 48px;
   min-height: 48px;
@@ -48,19 +61,6 @@ h4 {
 }
 .icon-button:hover {
   background-color: rgba(255, 255, 255, 0.05);
-}
-
-.background {
-  z-index: -1;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  background-color: #000;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .section-container {
