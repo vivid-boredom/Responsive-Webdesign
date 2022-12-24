@@ -16,6 +16,7 @@ section {
 .container {
   width: 75%;
   max-width: 34.5rem;
+  max-height: 795px;
   padding: 24px;
   background-color: #fff;
   border-radius: 16px;
@@ -23,4 +24,5 @@ section {
   top: 100px;
   left: 50%;
   transform: translateX(-50%);
+  overflow-y: auto;
 }

@@ -13,8 +13,16 @@
       (changeComponent)="activeComponent = $event"
     ></app-sign-in>
 
+    <app-password
+      *ngIf="activeComponent === 'password'"
+      (showWarning)="showWarning.emit()"
+      (changeComponent)="activeComponent = 'list'"
+    ></app-password>
+
     <app-create-account
       *ngIf="activeComponent === 'create-account'"
+      (showWarning)="showWarning.emit()"
+      (changeComponent)="activeComponent = $event"
     ></app-create-account>
 
     <app-orders-favourites
