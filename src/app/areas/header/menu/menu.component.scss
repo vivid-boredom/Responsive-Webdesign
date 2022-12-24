@@ -14,6 +14,7 @@ section {
 }
 
 .container {
+  box-sizing: border-box;
   width: 75%;
   max-width: 34.5rem;
   max-height: 795px;

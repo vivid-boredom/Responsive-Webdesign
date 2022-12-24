@@ -1,1 +1,47 @@
-<p>stamp-cards works!</p>
+<app-headline
+  title="StampCard"
+  (changeComponent)="changeComponent.emit('list')"
+></app-headline>
+
+<section class="top">
+  <img
+    src="../../../../../assets/media/stamp-cards/stamp-header.41b8a00e.svg"
+    alt="A circle with '10%' inside"
+    width="68px"
+    height="68px"
+  />
+
+  <span>StampCard</span>
+</section>
+
+<nav>
+  <button
+    (click)="activeCard = 'your-stampcards'"
+    [class.active]="activeCard === 'your-stampcards'"
+  >
+    <span>Your StampCards</span>
+  </button>
+  <button
+    (click)="activeCard = 'how-stampcards'"
+    [class.active]="activeCard === 'how-stampcards'"
+  >
+    <span>How does it work?</span>
+  </button>
+  <button
+    (click)="activeCard = 'terms-stampcards'"
+    [class.active]="activeCard === 'terms-stampcards'"
+  >
+    <span>Terms & Conditions</span>
+  </button>
+</nav>
+
+<app-your-stampcards
+  *ngIf="activeCard === 'your-stampcards'"
+  (changeComponent)="changeComponent.emit($event)"
+></app-your-stampcards>
+<app-how-stampcards
+  *ngIf="activeCard === 'how-stampcards'"
+></app-how-stampcards>
+<app-terms-stampcards
+  *ngIf="activeCard === 'terms-stampcards'"
+></app-terms-stampcards>

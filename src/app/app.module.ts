@@ -28,6 +28,10 @@ import { GoogleBtnComponent } from './components/google-btn/google-btn.component
 import { FacebookBtnComponent } from './components/facebook-btn/facebook-btn.component';
 import { InputComponent } from './components/input/input.component';
 import { PasswordComponent } from './areas/header/menu/password/password.component';
+import { YourStampcardsComponent } from './areas/header/menu/stamp-cards/your-stampcards/your-stampcards.component';
+import { HowStampcardsComponent } from './areas/header/menu/stamp-cards/how-stampcards/how-stampcards.component';
+import { TermsStampcardsComponent } from './areas/header/menu/stamp-cards/terms-stampcards/terms-stampcards.component';
+import { TermsBtnComponent } from './areas/header/menu/stamp-cards/terms-stampcards/terms-btn/terms-btn.component';
 
 @NgModule({
   declarations: [
@@ -57,6 +61,10 @@ import { PasswordComponent } from './areas/header/menu/password/password.compone
     FacebookBtnComponent,
     InputComponent,
     PasswordComponent,
+    YourStampcardsComponent,
+    HowStampcardsComponent,
+    TermsStampcardsComponent,
+    TermsBtnComponent,
   ],
   imports: [BrowserModule, ReactiveFormsModule],
   providers: [],

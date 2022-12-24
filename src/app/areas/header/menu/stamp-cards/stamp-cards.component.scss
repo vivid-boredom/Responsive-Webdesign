@@ -1,0 +1,52 @@
+.top {
+  margin-top: 8px;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 8px;
+
+  span {
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
+
+nav {
+  margin-bottom: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  button {
+    padding: 8px 16px;
+    border-radius: 2px 2px 0 0;
+    position: relative;
+    cursor: pointer;
+
+    span {
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    &.active::after {
+      background-color: #262626;
+    }
+  }
+
+  button::after {
+    background-color: transparent;
+
+    bottom: -4px;
+    content: "";
+    height: 4px;
+    left: 0;
+    margin-bottom: -4px;
+    position: absolute;
+    width: 100%;
+  }
+
+  button:hover {
+    background-color: #f2f2f1;
+  }
+}

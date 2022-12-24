@@ -27,7 +27,7 @@
       <span>Become a Courier</span>
     </button>
 
-    <app-language-select></app-language-select>
+    <app-language-select (showWarning)="warning()"></app-language-select>
 
     <button class="icon-button" (click)="showMenu = !showMenu">
       <svg

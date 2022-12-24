@@ -1,15 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-stamp-cards',
   templateUrl: './stamp-cards.component.html',
-  styleUrls: ['./stamp-cards.component.scss']
+  styleUrls: ['./stamp-cards.component.scss'],
 })
 export class StampCardsComponent implements OnInit {
+  @Output() changeComponent = new EventEmitter<string>();
+  @Output() showWarning = new EventEmitter<void>();
 
-  constructor() { }
+  public activeCard = 'your-stampcards';
 
-  ngOnInit(): void {
-  }
+  constructor() {}
 
+  ngOnInit(): void {}
 }

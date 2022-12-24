@@ -1,0 +1,38 @@
+p {
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+a {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+section {
+  box-sizing: border-box;
+  padding: 16px;
+  background-color: #f5f8f2;
+
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-areas: "random svg" "random  svg" "random text";
+}
+
+span {
+  font-size: 12px;
+}
+
+.icon-flex {
+  display: flex;
+}
+
+.random {
+  width: 64px;
+  height: 64px;
+  background-color: #fff;
+  cursor: pointer;
+}

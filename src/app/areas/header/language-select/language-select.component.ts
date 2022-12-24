@@ -1,15 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-language-select',
   templateUrl: './language-select.component.html',
-  styleUrls: ['./language-select.component.scss']
+  styleUrls: ['./language-select.component.scss'],
 })
 export class LanguageSelectComponent implements OnInit {
+  @Output() showWarning = new EventEmitter<void>();
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
+  ngOnInit(): void {}
+
+  public warning(): void {
+    this.showWarning.emit();
   }
-
 }
