@@ -21,8 +21,13 @@ import { StampCardsComponent } from './areas/header/menu/stamp-cards/stamp-cards
 import { SignInComponent } from './areas/header/menu/sign-in/sign-in.component';
 import { CreateAccountComponent } from './areas/header/menu/create-account/create-account.component';
 import { OrdersFavouritesComponent } from './areas/header/menu/orders-favourites/orders-favourites.component';
-import { OrdersIconComponent } from './areas/header/menu/icons/orders-icon/orders-icon.component';
-import { FavouritesIconComponent } from './areas/header/menu/icons/favourites-icon/favourites-icon.component';
+import { OrdersIconComponent } from './components/icons/orders-icon/orders-icon.component';
+import { FavouritesIconComponent } from './components/icons/favourites-icon/favourites-icon.component';
+import { HeadlineComponent } from './areas/header/menu/headline/headline.component';
+import { GoogleBtnComponent } from './components/google-btn/google-btn.component';
+import { FacebookBtnComponent } from './components/facebook-btn/facebook-btn.component';
+import { InputComponent } from './components/input/input.component';
+import { PasswordComponent } from './areas/header/menu/password/password.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +52,11 @@ import { FavouritesIconComponent } from './areas/header/menu/icons/favourites-ic
     OrdersFavouritesComponent,
     OrdersIconComponent,
     FavouritesIconComponent,
+    HeadlineComponent,
+    GoogleBtnComponent,
+    FacebookBtnComponent,
+    InputComponent,
+    PasswordComponent,
   ],
   imports: [BrowserModule, ReactiveFormsModule],
   providers: [],

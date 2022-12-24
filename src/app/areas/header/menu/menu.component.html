@@ -7,11 +7,25 @@
       *ngIf="activeComponent === 'list'"
     ></app-list>
 
+    <app-sign-in
+      *ngIf="activeComponent === 'sign-in'"
+      (showWarning)="showWarning.emit()"
+      (changeComponent)="activeComponent = $event"
+    ></app-sign-in>
+
+    <app-create-account
+      *ngIf="activeComponent === 'create-account'"
+    ></app-create-account>
+
     <app-orders-favourites
       *ngIf="activeComponent === 'orders' || activeComponent === 'favourites'"
       [activeComponent]="activeComponent"
       (changeComponent)="activeComponent = 'list'"
       (showWarning)="showWarning.emit()"
     ></app-orders-favourites>
+
+    <app-stamp-cards
+      *ngIf="activeComponent === 'stamp-cards'"
+    ></app-stamp-cards>
   </div>
 </section>
