@@ -27,3 +27,16 @@ section {
   transform: translateX(-50%);
   overflow-y: auto;
 }
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 100vw;
+    height: 100vh;
+    max-width: unset;
+    max-height: unset;
+    top: 0;
+    left: 0;
+    transform: translateX(0);
+    border-radius: 0;
+  }
+}

@@ -31,3 +31,26 @@ app-search {
   align-items: flex-start;
   row-gap: 16px;
 }
+
+@media screen and (max-width: 1024px) {
+  h1,
+  h3,
+  app-search {
+    padding: 0 32px;
+  }
+
+  h1,
+  h3 {
+    text-align: left;
+  }
+
+  app-search {
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .tile-content {
+    padding: 0;
+    margin: auto;
+  }
+}

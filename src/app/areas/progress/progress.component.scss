@@ -147,3 +147,11 @@ p {
     margin-left: -6.5px;
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .progress,
+  .line,
+  .dots-container {
+    display: none;
+  }
+}

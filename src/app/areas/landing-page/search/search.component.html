@@ -17,7 +17,7 @@
     <input
       type="text"
       id="input"
-      placeholder="Adresse, z.B. Kirchstraße 1"
+      placeholder="Adsress, i.e. Robert-Gerwig-Platz 1"
       (focus)="onFocus()"
       (blur)="onBlur()"
       [formControl]="control"
@@ -40,6 +40,13 @@
     </svg>
   </button>
   <button *ngIf="!isSearching" class="search-btn" (click)="warning()">
-    Suchen
+    <svg viewBox="0 0 16 16" width="24px" height="24px">
+      <path
+        d="M14.125 13.162L11.15 10.18a5.049 5.049 0 10-.936.936l2.948 3.01.963-.963zm-7-2.318a3.718 3.718 0 113.719-3.719 3.728 3.728 0 01-3.72 3.719z"
+        fill="#fff"
+      ></path>
+    </svg>
+
+    <span> Search </span>
   </button>
 </div>

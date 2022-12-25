@@ -38,3 +38,10 @@ img {
 .courier-button:hover {
   background-color: rgba(255, 255, 255, 0.05);
 }
+
+@media screen and (max-width: 741px) {
+  .courier-button,
+  app-language-select {
+    display: none;
+  }
+}

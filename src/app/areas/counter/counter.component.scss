@@ -21,3 +21,35 @@ section {
 .label {
   font-size: 22px;
 }
+
+@media screen and (max-width: 1400px) {
+  section {
+    column-gap: 64px;
+  }
+  .counter {
+    min-width: unset;
+  }
+
+  .value {
+    font-size: 72px;
+    line-height: 72px;
+  }
+
+  .label {
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 601px) {
+  section {
+    padding: 0 16px;
+    column-gap: 16px;
+  }
+
+  .value {
+    font-size: 48px;
+    line-height: 55px;
+  }
+}

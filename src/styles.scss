@@ -78,3 +78,9 @@ h4 {
     transform: translateY(0);
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .section-container {
+    height: unset;
+  }
+}

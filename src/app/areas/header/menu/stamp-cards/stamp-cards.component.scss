@@ -50,3 +50,9 @@ nav {
     background-color: #f2f2f1;
   }
 }
+
+@media screen and (max-width: 1024px) {
+  nav {
+    justify-content: flex-start;
+  }
+}

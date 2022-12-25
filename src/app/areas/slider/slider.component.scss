@@ -34,9 +34,11 @@ button {
   }
 
   .title {
-    width: 100%;
-    text-align: center;
-    line-height: 100px;
+    max-width: 50%;
+    height: 100px;
+    margin: auto;
+    display: grid;
+    place-content: center;
   }
 }
 
@@ -57,5 +59,11 @@ button {
   svg {
     width: 30px;
     height: 25px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  section {
+    height: 100vh;
   }
 }

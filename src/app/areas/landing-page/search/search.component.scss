@@ -36,6 +36,10 @@ input:focus {
   color: #fff;
   font-size: 24px;
   border-radius: 50rem;
+
+  svg {
+    display: none;
+  }
 }
 
 .cancel-btn {
@@ -45,4 +49,29 @@ input:focus {
 .location-icon {
   position: absolute;
   left: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  input {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .search {
+    width: unset;
+  }
+
+  .search-btn {
+    padding: 13px;
+
+    svg {
+      display: block;
+    }
+
+    span {
+      display: none;
+    }
+  }
 }

@@ -82,3 +82,29 @@ ul {
 .has-line + li {
   margin-top: 8px;
 }
+
+.small-font {
+  font-size: 14px;
+  color: #3c4c4f;
+}
+
+.country {
+  display: none;
+  a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    span:not(.small-font) {
+      display: flex;
+      align-items: center;
+      column-gap: 16px;
+    }
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .country {
+    display: flex;
+  }
+}
