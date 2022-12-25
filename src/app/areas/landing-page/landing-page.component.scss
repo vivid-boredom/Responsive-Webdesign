@@ -1,3 +1,17 @@
+h1 {
+  animation: appear 0.5s ease-in-out;
+}
+
+h3 {
+  animation: appear 0.5s ease-in-out 0.2s;
+  animation-fill-mode: both;
+}
+
+app-search {
+  animation: appear 0.5s ease-in-out 0.4s;
+  animation-fill-mode: both;
+}
+
 .tile {
   height: 100vh;
 

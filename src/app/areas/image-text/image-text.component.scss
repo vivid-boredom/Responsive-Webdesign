@@ -16,11 +16,14 @@ article {
 
   h2 {
     max-width: 420px;
+    animation: appear 0.5s ease-in-out;
   }
 
   p {
     margin-top: 20px;
     line-height: 1.6;
+    animation: appear 0.5s ease-in-out 0.2s;
+    animation-fill-mode: both;
   }
 }
 

@@ -19,6 +19,7 @@ footer {
 p {
   margin-top: 40px;
   color: #919191;
+  animation: appear 0.5s ease-in-out 0.2s;
 }
 
 a {
@@ -56,6 +57,8 @@ a,
   height: 140px;
   margin: auto;
   background-color: #fff;
+  animation: appear 0.5s ease-in-out;
+  animation-fill-mode: both;
 }
 
 .link-btn {
@@ -96,4 +99,14 @@ a,
   .text {
     color: #000;
   }
+}
+
+.link-btn:first-of-type {
+  animation: appear 0.5s ease-in-out 0.4s;
+  animation-fill-mode: both;
+}
+
+.link-btn:not(:first-of-type) {
+  animation: appear 0.5s ease-in-out 0.6s;
+  animation-fill-mode: both;
 }

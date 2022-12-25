@@ -6,7 +6,8 @@ table {
   width: 100%;
   border-collapse: collapse;
   border-spacing: 0;
-
+  animation: appear 0.5s ease-in-out 0.6s;
+  animation-fill-mode: both;
   td {
     text-align: right;
     color: #fff;
@@ -29,9 +30,16 @@ img {
   background-size: cover;
 }
 
+h2,
+h3 {
+  animation: appear 0.5s ease-in-out;
+}
+
 p {
   margin: 16px 0 32px 0;
   line-height: 1.6;
+  animation: appear 0.5s ease-in-out 0.4s;
+  animation-fill-mode: both;
 }
 
 .container {
@@ -55,6 +63,8 @@ p {
   padding-bottom: 30px;
   display: flex;
   column-gap: 10px;
+  animation: appear 0.5s ease-in-out 0.2s;
+  animation-fill-mode: both;
 
   button {
     font-size: 16px;
