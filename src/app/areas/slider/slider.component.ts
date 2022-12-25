@@ -22,16 +22,33 @@ export class SliderComponent implements OnInit, AfterViewInit {
   @ViewChild('section') section?: ElementRef;
 
   public mediaArr: Media[] = [
-    { media: 'chef', title: 'TODO' },
-    { media: 'spices', title: 'TODO' },
-    { media: 'bread', title: 'TODO' },
-    { media: 'burger', title: 'TODO' },
-    { media: 'chicken', title: 'TODO' },
-    { media: 'drink', title: 'TODO' },
-    { media: 'fish', title: 'TODO' },
-    { media: 'pasta', title: 'TODO' },
-    { media: 'plate', title: 'TODO' },
-    { media: 'potato', title: 'TODO' },
+    {
+      media: 'chef',
+      title:
+        'Made by real people, with years of experience, to guarantee the best taste.',
+    },
+    { media: 'spices', title: 'Using the freshest and purest spices' },
+    {
+      media: 'bread',
+      title: 'Not being limited by your culinary preferences.',
+    },
+    {
+      media: 'burger',
+      title: 'Not only a great taste, but also a great view.',
+    },
+    {
+      media: 'drink',
+      title: 'Deliveries without spilling your favorite drink.',
+    },
+    {
+      media: 'pasta',
+      title:
+        'Bringing the kitchen of all the cultures around the world to you.',
+    },
+    {
+      media: 'potato',
+      title: "You don't have to order a full meal. We got you anyway.",
+    },
   ];
 
   public index: number = 1;

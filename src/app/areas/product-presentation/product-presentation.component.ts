@@ -17,14 +17,16 @@ export class ProductPresentationComponent implements OnInit {
   public sushiArr: Sushi[] = [
     {
       type: 'PLATE',
-      paragraph: 'TODO',
+      paragraph:
+        'Not limiting yourself to a single type of sushi, guaranties the best time for your taste buds. And having a whole plate, lets you share some with your friends and improving the good time you are having.',
       weight: 1344,
       calories: 5432,
       imageSrc: './assets/media/product/sushi_plate.png',
     },
     {
       type: 'SINGLE',
-      paragraph: 'TODO',
+      paragraph:
+        'One of the most iconic dishes from asia. Combining fish with healthy and diverse vegetables from the plant world. By conveniently coming in a bite-sized form, you can always put some in the fridge for later or have a little snack in between.',
       weight: 48,
       calories: 198,
       imageSrc: './assets/media/product/sushi.png',
