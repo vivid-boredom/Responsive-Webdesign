@@ -1,3 +1,5 @@
+@import "../../../../../shared/variables";
+
 button,
 a {
   cursor: pointer;
@@ -38,7 +40,7 @@ ul {
 
   h3 {
     font-weight: bold;
-    font-size: 24px;
+    font-size: $fontSizeXXL;
   }
 }
 
@@ -54,7 +56,7 @@ ul {
     width: 100%;
     padding: 8px 16px;
     border-radius: 50rem;
-    font-size: 19px;
+    font-size: $fontSizeL;
     line-height: 24px;
     font-weight: bold;
   }
@@ -84,7 +86,7 @@ ul {
 }
 
 .small-font {
-  font-size: 14px;
+  font-size: $fontSizeS;
   color: #3c4c4f;
 }
 

@@ -1,3 +1,5 @@
+@import "../../../../../shared/variables";
+
 button {
   cursor: pointer;
 }
@@ -13,7 +15,7 @@ button {
 
   .or {
     padding: 0 16px;
-    font-size: 16px;
+    font-size: $fontSizeM;
     line-height: 28px;
     position: absolute;
     bottom: -14px;
@@ -52,7 +54,7 @@ form {
   margin-top: 24px;
   margin-bottom: 16px;
   padding: 9px 24px;
-  font-size: 20px;
+  font-size: $fontSizeXL;
   font-weight: bold;
   border-radius: 50rem;
   background-color: #000;
@@ -65,7 +67,7 @@ form {
 }
 
 .terms {
-  font-size: 14px;
+  font-size: $fontSizeS;
   line-height: 20px;
   color: #3c4c4f;
 
@@ -82,7 +84,7 @@ form {
 
 .create-account {
   margin-top: 16px;
-  font-size: 14px;
+  font-size: $fontSizeS;
   font-weight: bold;
 
   span {

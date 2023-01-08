@@ -1,3 +1,5 @@
+@import "../../../shared/variables";
+
 section {
   height: 100vh;
 }
@@ -19,7 +21,7 @@ a:hover {
 }
 
 a {
-  font-size: 12px;
+  font-size: $fontSizeXS;
 }
 
 h2 {
@@ -106,7 +108,7 @@ p {
 
   span {
     width: 20%;
-    font-size: 14px;
+    font-size: $fontSizeS;
   }
 }
 
@@ -153,5 +155,17 @@ p {
   .line,
   .dots-container {
     display: none;
+  }
+}
+
+@media screen and (max-width: 601px) {
+  .container {
+    .content {
+      width: calc(100% - 100px);
+    }
+  }
+
+  .link-btn {
+    line-height: 30px;
   }
 }

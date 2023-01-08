@@ -1,3 +1,5 @@
+@import "../../../../../../../shared/variables";
+
 section {
   border-bottom: 1px solid #00000014;
 }
@@ -10,7 +12,7 @@ button {
   cursor: pointer;
 
   span {
-    font-size: 16px;
+    font-size: $fontSizeM;
     font-weight: bold;
     text-align: left;
   }
@@ -25,5 +27,5 @@ button:hover {
   display: flex;
   flex-direction: column;
   row-gap: 24px;
-  font-size: 14px;
+  font-size: $fontSizeS;
 }

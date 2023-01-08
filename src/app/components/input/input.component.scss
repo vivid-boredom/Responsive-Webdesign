@@ -1,3 +1,5 @@
+@import "../../../shared/variables";
+
 label,
 input {
   width: 100%;
@@ -18,7 +20,7 @@ input {
   border-radius: 12px;
   color: #242e30;
   cursor: text;
-  font-size: 16px;
+  font-size: $fontSizeM;
   font-weight: 400;
   line-height: 24px;
 }
@@ -51,7 +53,7 @@ input:hover {
   display: flex;
   align-items: center;
   column-gap: 8px;
-  font-size: 14px;
+  font-size: $fontSizeS;
   color: #d50525;
 }
 
@@ -81,5 +83,5 @@ input:hover {
 }
 
 .strength {
-  font-size: 14px;
+  font-size: $fontSizeS;
 }

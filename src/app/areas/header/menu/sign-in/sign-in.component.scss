@@ -1,3 +1,5 @@
+@import "../../../../../shared/variables";
+
 button {
   cursor: pointer;
 }
@@ -6,7 +8,7 @@ button {
   width: 100%;
   padding: 9px 24px;
   cursor: pointer;
-  font-size: 20px;
+  font-size: $fontSizeXL;
   font-weight: bold;
   border-radius: 50rem;
 }
@@ -22,7 +24,7 @@ button {
 
   .or {
     padding: 0 16px;
-    font-size: 16px;
+    font-size: $fontSizeM;
     line-height: 28px;
     position: absolute;
     bottom: -14px;
@@ -44,7 +46,7 @@ form {
 
 .forgot-password {
   margin-top: 4px;
-  font-size: 14px;
+  font-size: $fontSizeS;
   color: #125fca;
   align-self: flex-end;
 }
@@ -59,7 +61,7 @@ form {
   width: 100%;
   margin-top: 16px;
   padding: 9px 24px;
-  font-size: 20px;
+  font-size: $fontSizeXL;
   font-weight: bold;
   border-radius: 50rem;
   background-color: #000;
@@ -73,7 +75,7 @@ form {
 
 .create-account {
   margin-top: 16px;
-  font-size: 14px;
+  font-size: $fontSizeS;
   font-weight: bold;
 
   span {

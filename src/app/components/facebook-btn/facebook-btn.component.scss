@@ -1,8 +1,10 @@
+@import "../../../shared/variables";
+
 button {
   width: 100%;
   padding: 9px 24px;
   cursor: pointer;
-  font-size: 20px;
+  font-size: $fontSizeXL;
   font-weight: bold;
   border-radius: 50rem;
   background-color: #1877f2;

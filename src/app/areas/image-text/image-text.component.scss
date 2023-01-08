@@ -1,3 +1,5 @@
+@import "../../../shared/variables";
+
 section {
   width: 100%;
   max-width: 1400px;
@@ -65,7 +67,7 @@ article,
     }
 
     p {
-      font-size: 20px;
+      font-size: $fontSizeXL;
       animation: appear 0.5s ease-in-out 0.4s;
       animation-fill-mode: both;
     }

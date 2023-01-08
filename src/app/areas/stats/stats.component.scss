@@ -1,3 +1,5 @@
+@import "../../../shared/variables";
+
 section {
   max-width: 1420px;
   margin: 75px auto;
@@ -38,7 +40,7 @@ section {
 .text {
   width: 100%;
   max-width: 300px;
-  font-size: 16px;
+  font-size: $fontSizeM;
   line-height: 25px;
 }
 
@@ -51,7 +53,11 @@ section {
 
   .content {
     width: unset;
-    row-gap: 64px;
+    row-gap: 32px;
+  }
+
+  .title {
+    font-size: $fontSizeXL;
   }
 
   .text {

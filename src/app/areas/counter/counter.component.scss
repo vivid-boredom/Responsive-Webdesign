@@ -1,3 +1,5 @@
+@import "../../../shared/variables";
+
 section {
   margin: 75px auto;
   display: flex;
@@ -19,7 +21,7 @@ section {
 }
 
 .label {
-  font-size: 22px;
+  font-size: $fontSizeXL;
 }
 
 @media screen and (max-width: 1400px) {
@@ -31,12 +33,12 @@ section {
   }
 
   .value {
-    font-size: 72px;
-    line-height: 72px;
+    font-size: $fontSizeXXXL;
+    line-height: $fontSizeXXXL;
   }
 
   .label {
-    font-size: 12px;
+    font-size: $fontSizeXS;
     line-height: 12px;
     text-align: center;
   }

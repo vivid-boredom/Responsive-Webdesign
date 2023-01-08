@@ -1,3 +1,5 @@
+@import "../../../shared/variables";
+
 section {
   margin: 75px 0;
   text-align: center;
@@ -43,7 +45,7 @@ a:hover {
 p,
 a,
 .copyright {
-  font-size: 12px;
+  font-size: $fontSizeXS;
 }
 
 .copyright {
@@ -124,12 +126,12 @@ a,
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 601px) {
   .link-btn {
     box-sizing: border-box;
     width: calc(100% - 40px);
     margin: 15px 20px 0;
     padding: 0 15px;
-    font-size: 16px;
+    font-size: $fontSizeM;
   }
 }

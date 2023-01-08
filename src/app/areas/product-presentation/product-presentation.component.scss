@@ -1,3 +1,5 @@
+@import "../../../shared/variables";
+
 section {
   position: relative;
 }
@@ -67,7 +69,7 @@ p {
   animation-fill-mode: both;
 
   button {
-    font-size: 16px;
+    font-size: $fontSizeM;
     color: #fff;
     cursor: pointer;
     border-bottom: 1px solid transparent;
@@ -85,7 +87,7 @@ p {
   }
 
   span {
-    font-size: 14px;
+    font-size: $fontSizeS;
     color: #ffffff80;
   }
 }
@@ -114,7 +116,7 @@ p {
   }
 
   p {
-    font-size: 20px;
+    font-size: $fontSizeXL;
   }
 
   .container {

@@ -1,3 +1,5 @@
+@import "../../../shared/variables";
+
 header {
   padding: 12px 16px;
   display: flex;
@@ -31,7 +33,7 @@ img {
   align-items: center;
   column-gap: 8px;
   border-radius: 50rem;
-  font-size: 16px;
+  font-size: $fontSizeM;
   color: #fff;
   cursor: pointer;
 }

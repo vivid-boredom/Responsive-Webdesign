@@ -1,6 +1,7 @@
+@import "../../../../../../shared/variables";
 p {
   margin-bottom: 16px;
-  font-size: 14px;
+  font-size: $fontSizeS;
 }
 
 img {
@@ -15,7 +16,7 @@ ol {
 
 li,
 span {
-  font-size: 12px;
+  font-size: $fontSizeXS;
 }
 
 li {
@@ -30,6 +31,6 @@ button {
   padding: 8px 16px;
   background-color: #000;
   color: #fff;
-  font-size: 19px;
+  font-size: $fontSizeL;
   border-radius: 50rem;
 }

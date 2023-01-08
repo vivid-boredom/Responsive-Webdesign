@@ -10,6 +10,8 @@ export class AppComponent {
   public warning = false;
   public timer: number = 2500;
 
+  public blockPage = false;
+
   public countDown(): void {
     timer(100).subscribe(() => {
       this.timer -= 100;

@@ -24,12 +24,12 @@
           />
         </g>
       </svg>
-      <span>Become a Courier</span>
+      <span>Become a rocketeer</span>
     </button>
 
     <app-language-select (showWarning)="warning()"></app-language-select>
 
-    <button class="icon-button" (click)="showMenu = !showMenu">
+    <button class="icon-button" (click)="triggerMenu()">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         height="24px"
@@ -45,6 +45,6 @@
 </header>
 <app-menu
   *ngIf="showMenu"
-  (close)="showMenu = false"
+  (close)="triggerMenu()"
   (showWarning)="warning()"
 ></app-menu>
